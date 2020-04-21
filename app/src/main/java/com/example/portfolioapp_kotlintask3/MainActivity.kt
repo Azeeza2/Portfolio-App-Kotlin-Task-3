@@ -3,14 +3,12 @@ package com.example.portfolioapp_kotlintask3
 import android.annotation.TargetApi
 import android.content.ActivityNotFoundException
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
-import androidx.lifecycle.Lifecycle
 
 
 class MainActivity : AppCompatActivity() {
@@ -123,25 +121,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
-       /* // A sample member ID value to open
-
-        // A sample member ID value to open
-        val targetID = "https://www.linkedin.com/in/azeezat-balogun-40737416b/"
-
-        val deepLinkHelper: DeepLinkHelper = DeepLinkHelper.getInstance()
-
-        // Open the target LinkedIn member's profile
-
-        // Open the target LinkedIn member's profile
-        deepLinkHelper.openOtherProfile(thisActivity, targetID, object : DeeplinkListener() {
-            fun onDeepLinkSuccess() {
-                // Successfully sent user to LinkedIn app
-            }
-
-            fun onDeepLinkError(error: LiDeepLinkError?) {
-                // Error sending user to LinkedIn app
-            }
-        })*/
 
     @TargetApi(Build.VERSION_CODES.DONUT)
     fun openTelegram(view: View) {
@@ -183,5 +162,30 @@ class MainActivity : AppCompatActivity() {
         if (i.resolveActivity(packageManager) != null) {
             startActivity(i)
         }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.v("MainActivity", "Application status : onStart")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.v("MainActivity", "Application status : onResume")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.v("MainActivity", "Application status : onPause")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.v("MainActivity", "Application status : onStop")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.v("MainActivity", "Application status : onDestroy")
     }
 }
