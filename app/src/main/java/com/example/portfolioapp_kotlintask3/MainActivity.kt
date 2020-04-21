@@ -16,8 +16,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        // @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
     }
 
     fun openGmail(view: View) {
@@ -81,18 +79,6 @@ class MainActivity : AppCompatActivity() {
         if (i.resolveActivity(packageManager) != null) {
             startActivity(i)
         }
-        /*try {
-            val intent =
-                Intent(Intent.ACTION_VIEW, Uri.parse("fb://profile/1439424696230461"))
-            startActivity(intent)
-        } catch (e: java.lang.Exception) {
-            startActivity(
-                Intent(
-                    Intent.ACTION_VIEW,
-                    Uri.parse("http://www.facebook.com/balogun.azeezat.56")
-                )
-            )
-        }*/
     }
     @TargetApi(Build.VERSION_CODES.DONUT)
     fun openInstagram(view: View) {
