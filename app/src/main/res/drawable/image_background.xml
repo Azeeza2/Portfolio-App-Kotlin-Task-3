@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android = "http://schemas.android.com/apk/res/android">
+    <item android:drawable = "@drawable/circle"/>
+    <item android:drawable = "@drawable/me"/>
+</layer-list>
+
+
+
+    <!--<item android:state_pressed="false" >
+        <shape android:shape="rectangle"  >
+            <corners android:radius="150dip" />
+            <stroke android:width="1dip"
+            android:color="#FFFFFF" />
+                &lt;!&ndash;The above color characteristic is for all-round extreme border color&ndash;&gt;
+            <gradient android:angle="-90"
+                android:startColor="#FFFFFF"
+                android:endColor="#FFFFFF"  />
+            &lt;!&ndash;The above Startcolor characteristic is for  top fill color&ndash;&gt;
+            &lt;!&ndash;The above Endcolor characteristic is for bottom fill color&ndash;&gt;
+        </shape>
+    </item>
+    &lt;!&ndash;when action is initiated i.e typing&ndash;&gt;
+    <item android:state_focused="false">
+        <shape android:shape="rectangle"  >
+            <corners android:radius="9dip" />
+            <stroke android:width="1dip"
+                android:color="#FFFFFF" />
+            <solid android:color="#FFFFFF"/>
+        </shape>
+    </item>
+    &lt;!&ndash;for overall appearance&ndash;&gt;
+    <item >
+        <shape android:shape="rectangle"  >
+            <corners android:radius="10dip" />
+            <stroke android:width="1dip"
+                android:color="#FFFFFF" />
+            <gradient android:angle="-90"
+                android:startColor="#FFFFFF"
+                android:endColor="#FFFFFF" />
+        </shape>
+    </item>
+&ndash;&gt;
+-->
